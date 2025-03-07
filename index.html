@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>生日快乐！</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="birthday-card">
+        <div class="left-section">
+          <div class="cake">🎂</div>
+          <h1>xx生日快乐！</h1>
+          <!-- 这里给人名 -->
+          <p class="message">又长大一岁了呢~但还是永远18岁！</p>
+          <div class="balloons">🎈🎈🎈</div>
+          <div class="gifts">🎁 🎉 🎊</div>
+          <button class="click-area">这个是惊喜按钮！</button>
+        </div>
+
+        <div class="right-section">
+          <div class="friendship-time">
+            <p>我们已经相识</p>
+            <div class="time-counter">
+              <span id="years">0</span>年 <span id="months">0</span>月
+              <span id="days">0</span>天
+            </div>
+            <div class="detailed-time">
+              <div class="time-item">
+                <span id="totalDays">0</span>
+                <label>天</label>
+              </div>
+              <div class="time-item">
+                <span id="hours">0</span>
+                <label>时</label>
+              </div>
+              <div class="time-item">
+                <span id="minutes">0</span>
+                <label>分</label>
+              </div>
+              <div class="time-item">
+                <span id="seconds">0</span>
+                <label>秒</label>
+              </div>
+            </div>
+            <p class="friendship-start">自2020年8月相遇 ❤️</p>
+            <!-- 设置时间 -->
+          </div>
+        </div>
+      </div>
+      <div class="music-player">
+        <iframe
+          frameborder="no"
+          border="0"
+          marginwidth="0"
+          marginheight="0"
+          width="330"
+          height="86"
+          src="//music.163.com/outchain/player?type=2&id=1963443271&auto=1&height=66"
+        >
+        </iframe>
+      </div>
+    </div>
+    <div class="message-modal" id="messageModal">
+      <div class="message-card">
+        <div class="card-inner">
+          <div class="card-header">
+            <div class="header-decor">✨ 生日祝福 🎂</div>
+            <span class="close-btn">×</span>
+          </div>
+          <div class="message-content">
+            <button class="nav-btn prev-btn">
+              <span class="nav-arrow">❮</span>
+            </button>
+            <div class="message-container">
+              <div class="message-top">
+                <div class="message-avatar"></div>
+                <div class="message-name"></div>
+              </div>
+              <div class="message-body">
+                <div class="message-text"></div>
+                <div class="message-footer">
+                  <div class="message-date"></div>
+                  <div class="message-decor">🌟</div>
+                </div>
+              </div>
+            </div>
+            <button class="nav-btn next-btn">
+              <span class="nav-arrow">❯</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
